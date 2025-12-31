@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body.light {
+  background: linear-gradient(135deg, #e0f2ff, #fff6cc);
+  color: #111;
+}
+
+body.dark {
+  background: #111;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg,#2563eb,#facc15);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 2px solid #2563eb;
+}
+
+button.primary {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg,#2563eb,#facc15);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.dark .header {
+  background: #1e1e1e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  padding: 15px;
+}
+
+.service {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background: white;
+  font-weight: bold;
+}
+
+.dark .service {
+  background: #222;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.dark .popup-box {
+  background: #222;
+}
